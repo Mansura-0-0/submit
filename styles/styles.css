@@ -1,0 +1,526 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Changed font to a more modern look */
+}
+
+body {
+    background-color: #f5f5f5; /* Slightly lighter background */
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #111; /* Darker background for a sleek look */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 90px; /* Slightly smaller logo */
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.8em; /* Slightly larger font size for more emphasis */
+    letter-spacing: 2px;
+    color: white;
+    margin: 0;
+    text-transform: uppercase; /* Added uppercase transformation for emphasis */
+}
+
+header h1 .val {
+    color: #00e676;
+}
+
+header h1 .ent {
+    color: #fafafa;
+}
+
+header h1 .inos {
+    color: #ff3d00;
+}
+
+header h1 .takeaway {
+    color: #ff6600;
+    font-size: 1.3em;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    vertical-align: middle;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    background: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li#active a {
+    background: #ff5722;
+    border-radius: 8px;
+}
+
+
+/* Contact Form */
+.contact-form {
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.contact-form h2 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.contact-form button {
+    background: #ff5722;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #e64a19;
+}
+/* Style for gender radio buttons */
+.gender-options {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    gap: 10px; /* Add space between the radio buttons */
+}
+
+.gender-options input[type="radio"] {
+    margin: 0 5px 0 0; /* Adjust margin to make the buttons closer */
+}
+
+/* Opening Hours Table */
+.opening-hours {
+    background: #fff;
+    padding: 25px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hours-table th, .hours-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.hours-table th {
+    background: #ff5722;
+    color: white;
+}
+
+/* Google Maps */
+.map iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    position: relative;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #ff5722;
+}
+
+/* General Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 12px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Layout */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.main-content {
+    flex: 2;
+    padding-right: 20px;
+}
+
+aside {
+    flex: 1;
+    background: #fff3e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 100%; /* Ensure it stretches appropriately */
+    position: relative; /* So it can extend until just before the About section */
+    margin-bottom: 50px; /* To create space between the aside and the about section */
+}
+
+/* Specialties Section */
+.specialties {
+    display: flex;
+    flex-wrap: wrap; /* Allows the items to wrap into new lines */
+    justify-content: space-between; /* Spreads the items with space between them */
+    margin-top: 30px; /* Adds more space above the specialties section */
+}
+
+/* Individual Specialty Items */
+.specialty {
+    width: 45%; /* Adjust width to ensure items are side-by-side */
+    background: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Adds space between rows */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* On hover, make the specialty items slightly larger */
+.specialty:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjustments for the images inside specialties */
+.specialty img {
+    width: 100%;
+    max-width: 300px; /* Ensures that the images are not too big */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.specialty img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Add some space after the "Our Specialties" title */
+.specialties h2 {
+    width: 100%; /* Ensure the title takes up the whole width */
+    margin-bottom: 20px; /* Adds space below the title */
+    text-align: center;
+    font-size: 1.8em;
+    color: #333;
+}
+
+/* Responsive design - stack specialties vertically on smaller screens */
+@media (max-width: 768px) {
+    .specialties {
+        justify-content: center; /* Center the specialties on smaller screens */
+    }
+
+    .specialty {
+        width: 80%; /* Make items take up more space on smaller screens */
+        margin-bottom: 15px;
+    }
+}
+
+/* Sidebar Flashy Section */
+.flashy-heading {
+    font-size: 1.6em;
+    color: #ff5722;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+/* Specific image styles for smaller images (bandm and milk) */
+/* Specific image styles for smaller images inside the sidebar (bandm and milk) */
+.sidebar img {
+    width: 100%; /* Make the images smaller but still maintain good proportions */
+    max-width: 250px; /* Set max-width to limit image growth */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Targeting the image inside the About Us section */
+.about img {
+    width: 100%; /* This makes the image responsive */
+    max-width: 500px; /* Limit the maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: round the corners of the image */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional: shadow for effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Optional: smooth transition for hover effect */
+}
+
+/* Optional: Hover effect for the image */
+.about img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+}
+
+
+/* Menu Page - General Styling */
+.menu-intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Menu Images */
+.menu-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+}
+
+.menu-img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-img:hover {
+    transform: scale(1.05);
+}
+
+/* Special Recommendations Grid */
+.recommendations {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.recommendations .dish {
+    display: inline-block;
+    width: 270px;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.recommendations .dish:hover {
+    transform: scale(1.05);
+}
+
+.recommendations img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Scroll to Top Button */
+.scroll-bottom {
+    display: block;
+    text-align: center;
+    margin: 25px auto;
+    padding: 15px 25px;
+    background-color: #ff5722;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+.scroll-bottom:hover {
+    background-color: #e64a19;
+}
+.scroll-top {
+    display: block;
+    text-align: center;
+    margin: 25px auto;
+    padding: 15px 25px;
+    background-color: #ff5722;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+.scroll-top:hover {
+    background-color: #e64a19;
+}
+
+/* Styling for Follow Us Section */
+.follow-us button {
+    background-color: #3b5998;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.follow-us button:hover {
+    background-color: #2d4373;
+}
+
+/* Facebook Section */
+.facebook-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Facebook logo size */
+.facebook-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; /* Adds space between the logo and the text */
+}
+
+/* Align the logo and text properly */
+.facebook-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Make sure the hyperlink is visible and style it nicely */
+.visible-link {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits color from the button */
+}
+
+.visible-link button {
+    padding: 10px 20px;
+    background-color: #3b5998; /* Facebook blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.visible-link button:hover {
+    background-color: #2d4373; /* Darker blue on hover */
+}
+/* Styling for the chef image */
+.chef-image {
+    width: 100%;
+    max-width: 600px;  /* Adjust based on your design */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chef-image:hover {
+    transform: scale(1.0.5);  /* Makes the image bigger */
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.7);  /* Adds a glowing orange shadow */
+}
+h5{
+    font-size: 2.5em;  /* Make the text bigger */
+    text-align: center;  /* Center the text */
+    color: #333;  /* Adjust color if needed */
+    margin: 20px 0;  /* Add some margin around the text */
+}
+
